@@ -1,0 +1,50 @@
+header{
+    background-color: white;
+    /* width: 100%; */
+    padding: 120px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 100px; */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+   /* gap: 50px; */
+}
+ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+li a{
+    text-decoration: none;
+    color: #5f5e5e;
+    font-weight: bold;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.header-title{
+    max-width: 540px;
+}
+.start{
+    max-width: 520px;
+    font-size: 3.3rem;
+}
+.back-img{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+/*sheard color*/
+.dark-1{
+    color: #3d3d3d;
+}
+.dark-2{
+    color: #5f5e5e;
+}
+/*shead color*/
