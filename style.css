@@ -135,3 +135,42 @@ p{
     color: #5f5e5e;
     font-size: 1.5rem;
 }
+li i{
+    gap: 1px;
+}
+.see-more{
+   border: 1px solid red;
+   width: 100px;
+   position:  absolute;
+   margin-right: 0px;
+}
+
+/*media quere*/
+@media screen and (max-width: 576px) {
+    nav ul, .header-container,  .section-logo{
+        flex-direction: column;
+    }
+    .section-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-title {
+        margin: auto;
+    }
+    .back-img{
+     padding-left: -20px;
+     font-size: 10px;
+    }
+    header{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 990px){
+    .section-logo{
+        flex-wrap: wrap
+    } 
+    .section-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} {
+    
+}
