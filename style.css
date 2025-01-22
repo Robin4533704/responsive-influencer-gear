@@ -26,6 +26,7 @@ li a{
     text-decoration: none;
     color: #5f5e5e;
     font-weight: bold;
+    font-size: 20px;
 }
 .header-container{
     display: flex;
@@ -139,20 +140,65 @@ li i{
     gap: 1px;
 }
 .see-more{
-   border: 1px solid red;
-   width: 100px;
-   position:  absolute;
-   margin-right: 0px;
+   /* border: 1px solid red; */
+   /* width: 100px; */
+   /* position:  absolute; */
+ margin-left: 940px;
+ /* background-color: palevioletred; */
+padding: 1px 50px;
+ border-radius: 30px;
+ color: palevioletred;
+ font-weight: 700px;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-self: center;
+
 }
+.three-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  padding: 10px 200px 0 230px;
+}
+.three-title{
+    max-width: 840px;
+    padding-right: 180px;
+}
+.product{
+    font-size: 4rem;
+}
+.btn-primary:hover{
+    background-color: blue;
+    padding: 12px 60px;
+    transition:  all ease-in-out 0.5s;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+   text-align: center;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+}
+.white{
+    color: white;
+    margin-top: -20px;
+}
+
+
 
 /*media quere*/
 @media screen and (max-width: 576px) {
-    nav ul, .header-container,  .section-logo{
+    nav ul, nav, .header-container, .three-container, .section-container, .section-logo{
         flex-direction: column;
     }
     .section-container{
         grid-template-columns: repeat(1, 1fr);
+      
     }
+    .section-tow{
+        justify-self: auto;
+      }
     .header-title {
         margin: auto;
     }
@@ -165,9 +211,16 @@ li i{
     }
 }
 @media screen and (min-width: 576px) and (max-width: 990px){
+    .three-container{
+        flex-direction: column;
+    }
+   
     .section-logo{
-        flex-wrap: wrap
+        flex-wrap: wrap;
     } 
+    .section-tow{
+    justify-self: auto;
+    }
     .section-container{
         grid-template-columns: repeat(2, 1fr);
     }
